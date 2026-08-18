@@ -1,0 +1,30 @@
+Questões para análise 
+
+1. A média da variável analisada é maior nos módulos que apresentam defeitos? 
+Sim
+
+2. Existe grande diferença entre a média dos dois grupos? 
+Diferença de 47,58 LOC
+
+3. Qual grupo apresenta maior dispersão? 
+Os módulos com defeito apresentam maior dispersão, pois possuem um desvio-padrão maior. 
+Isso indica que os valores de LOC desse grupo estão mais espalhados em relação à média.
+
+4. A mediana é próxima da média? O que isso pode indicar sobre a distribuição dos dados?
+Não. A média (42,02) é consideravelmente maior que a mediana (23,00). 
+Essa diferença pode indicar uma distribuição assimétrica, com alguns valores muito altos de LOC influenciando a média.
+
+5. Existem valores extremos (outliers)?
+Sim. Existem indícios de valores extremos, principalmente devido à grande diferença 
+entre o valor máximo (3442) e a mediana (23). O boxplot permite visualizar esses valores de forma mais clara.
+
+6. Com base apenas na análise estatística realizada, é possível afirmar que a variável escolhida está relacionada à ocorrência de defeitos? Justifique
+
+Não é possível afirmar apenas com essa análise estatística que LOC é a causa 
+ou que existe uma relação estatisticamente comprovada com a ocorrência de defeitos.
+
+Embora os módulos com defeito apresentem uma média de LOC maior, essa diferença, 
+por si só, não comprova uma relação entre o tamanho do módulo e a ocorrência de defeitos. 
+A análise realizada é descritiva e não avalia significância estatística, correlação ou 
+outros fatores que possam influenciar a ocorrência de defeitos. Seriam necessárias análises adicionais, 
+como testes estatísticos ou modelos de associação/predição, para investigar essa relação.
