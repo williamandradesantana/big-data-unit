@@ -1,20 +1,24 @@
-Questões para análise 
+Questões para análise - 1
 
 1. A média da variável analisada é maior nos módulos que apresentam defeitos? 
 Sim
 
 2. Existe grande diferença entre a média dos dois grupos? 
+
 Diferença de 47,58 LOC
 
 3. Qual grupo apresenta maior dispersão? 
+
 Os módulos com defeito apresentam maior dispersão, pois possuem um desvio-padrão maior. 
 Isso indica que os valores de LOC desse grupo estão mais espalhados em relação à média.
 
 4. A mediana é próxima da média? O que isso pode indicar sobre a distribuição dos dados?
+
 Não. A média (42,02) é consideravelmente maior que a mediana (23,00). 
 Essa diferença pode indicar uma distribuição assimétrica, com alguns valores muito altos de LOC influenciando a média.
 
 5. Existem valores extremos (outliers)?
+
 Sim. Existem indícios de valores extremos, principalmente devido à grande diferença 
 entre o valor máximo (3442) e a mediana (23). O boxplot permite visualizar esses valores de forma mais clara.
 
@@ -28,3 +32,40 @@ por si só, não comprova uma relação entre o tamanho do módulo e a ocorrênc
 A análise realizada é descritiva e não avalia significância estatística, correlação ou 
 outros fatores que possam influenciar a ocorrência de defeitos. Seriam necessárias análises adicionais, 
 como testes estatísticos ou modelos de associação/predição, para investigar essa relação.
+
+Questões para análise - 2
+
+1. Qual variável apresenta maior dispersão?
+
+Estimated_Effort_Hours apresenta maior dispersão, com desvio-padrão de 569,09 horas.
+
+2. Qual grupo de risco apresenta maior média para cada variável analisada? 
+
+Para Estimated_Effort_Hours, o grupo Low possui a maior média (1116,02). 
+Para Actual_Effort_Hours, o grupo High possui a maior média (1132,61).
+
+3. Existem projetos que apresentam valores muito diferentes dos demais? 
+
+Não foram observados outliers evidentes no boxplot. 
+Os três grupos apresentam uma distribuição semelhante, com valores variando aproximadamente entre 100 e 2000 horas.
+
+4. A distribuição dos dados é aproximadamente simétrica ou apresenta concentração em determinadas regiões? 
+
+A distribuição apresenta uma dispersão relativamente uniforme entre os grupos de risco, sem
+concentração extrema em uma determinada região. Os boxplots também apresentam formatos semelhantes, 
+indicando que a distribuição do esforço realizado é relativamente parecida entre os níveis de risco.
+
+5. Existe algum indício de associação entre as variáveis analisadas e o nível de risco? 
+
+Existe um possível indício de associação entre complexidade e nível de risco, principalmente 
+porque a quantidade de projetos de alto risco aumenta em algumas categorias de complexidade. 
+Entretanto, os gráficos, isoladamente, não permitem afirmar que existe uma associação estatisticamente significativa.
+
+6. Que informação estatística poderia ser utilizada por um gerente de projetos para auxiliar na tomada de decisão?
+
+A diferença entre o esforço estimado e o esforço realizado por nível de risco pode ser uma 
+informação útil para um gerente de projetos. No grupo de alto risco, o esforço 
+realizado apresenta média de aproximadamente 1132,61 horas, enquanto o esforço 
+estimado apresenta média de 1018,69 horas. Essa diferença de aproximadamente 
+113,92 horas pode indicar uma possível subestimação do esforço em projetos de maior risco, 
+auxiliando o gerente no planejamento de recursos e na elaboração de estimativas futuras.
