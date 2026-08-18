@@ -1,4 +1,4 @@
-from __init__ import data
+from __init__ import jm1_data
 
 # Etapa 1 - Conhecimento dos dados
 
@@ -10,12 +10,12 @@ Tipo de cada variável;
 Variável relacionada à ocorrência de defeito; 
 Existência de valores ausentes. 
 '''
-print(len(data))
+print(len(jm1_data))
 print()
-print(len(data.columns.to_list()))
+print(len(jm1_data.columns.to_list()))
 print()
-data.info()
+jm1_data.info()
 print()
-print(data["defects"].value_counts())
+print(jm1_data["defects"].value_counts())
 print()
-print(data.isnull().sum())
+print(jm1_data.isnull().sum())

@@ -1,4 +1,4 @@
-from __init__ import data
+from __init__ import jm1_data
 
 """
 Etapa 3 – Análise dos defeitos 
@@ -8,8 +8,8 @@ módulos sem defeito.
 Para a variável escolhida, calcule a média e o desvio-padrão de cada grupo. 
 """
 
-with_defect = data[data["defects"] == True]
-without_defect = data[data["defects"] == False]
+with_defect = jm1_data[jm1_data["defects"] == True]
+without_defect = jm1_data[jm1_data["defects"] == False]
 
 print("Mean of with defect", round(with_defect["loc"].mean(), 2))
 print("Mean of without defect", round(without_defect["loc"].mean(), 2))
